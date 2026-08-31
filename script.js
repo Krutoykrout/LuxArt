@@ -1,15 +1,19 @@
-const header = document.querySelector('.header');
-const setHeader = () => header.classList.toggle('scrolled', window.scrollY > 12);
-setHeader();
-window.addEventListener('scroll', setHeader, { passive: true });
+const menuButton = document.querySelector('.menu');
+const mobileNav = document.querySelector('#mobile-nav');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      observer.unobserve(entry.target);
-    }
+if (menuButton && mobileNav) {
+  menuButton.addEventListener('click', () => {
+    const open = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!open));
+    mobileNav.hidden = open;
+    mobileNav.classList.toggle('is-open', !open);
   });
-}, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  mobileNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      menuButton.setAttribute('aria-expanded', 'false');
+      mobileNav.hidden = true;
+      mobileNav.classList.remove('is-open');
+    });
+  });
+}
