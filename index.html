@@ -4,13 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#071019">
-  <meta name="description" content="Люкс Арт — подключение водителей к Яндекс Такси и грузовым заказам по России. Комиссия от 1,5%, выплаты 24/7.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Люкс Арт — подключение водителей к Яндекс Такси и грузовым заказам по России. Такси — комиссия от 1,5%, грузовой — 2%, выплаты 24/7.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Люкс Арт — подключение к Яндекс Такси и грузовым заказам">
+  <meta property="og:description" content="Такси — комиссия от 1,5%, грузовой — 2%. Выплаты 24/7, авторегистрация онлайн.">
+  <meta name="twitter:card" content="summary">
   <title>Люкс Арт — подключение к Яндекс Такси и грузовым заказам</title>
-  <link rel="icon" type="image/png" href="assets/lux-art-logo.png">
+  <link rel="canonical" href="https://krutoykrout.github.io/LuxArt/">
+  <meta property="og:url" content="https://krutoykrout.github.io/LuxArt/">
+  <meta property="og:image" content="https://krutoykrout.github.io/LuxArt/assets/lux-art-logo.png">
+  <link rel="icon" type="image/png" href="https://krutoykrout.github.io/LuxArt/assets/lux-art-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Люкс Арт",
+    "telephone": "+79218494032",
+    "email": "m0tors.grand@yandex.ru"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -18,7 +38,7 @@
   <header class="site-header" id="top">
     <div class="container header-shell">
       <a class="brand" href="#top" aria-label="Люкс Арт — наверх">
-        <img src="assets/lux-art-logo.png" width="64" height="64" alt="">
+        <img src="https://krutoykrout.github.io/LuxArt/assets/lux-art-logo.png" width="64" height="64" alt="" decoding="async">
         <span class="brand-copy"><strong>Люкс Арт</strong><small>Парк-партнёр Яндекс</small></span>
       </a>
 
@@ -31,8 +51,8 @@
       </nav>
 
       <div class="header-actions">
-        <a class="header-max" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener">MAX</a>
-        <a class="button button--gold button--header desktop-cta" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener">Авторегистрация <span>↗</span></a>
+        <a class="header-max" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener" data-cta="max-header">MAX</a>
+        <a class="button button--gold button--header desktop-cta" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener" data-cta="registration-header">Авторегистрация <span aria-hidden="true">↗</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню"><span></span><span></span></button>
       </div>
     </div>
@@ -44,26 +64,26 @@
         <a href="#requirements">Требования</a>
         <a href="#steps">Подключение</a>
         <a href="#faq">Вопросы</a>
-        <a href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener">Написать в MAX</a>
+        <a href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener" data-cta="max-menu">Написать в MAX</a>
+        <a href="tel:+79218494032" data-cta="phone-menu">Позвонить: 8 921 849-40-32</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero-stage">
           <div class="hero-copy reveal">
-            <div class="eyebrow"><span></span> Подключение по России</div>
-            <h1>Яндекс Такси<br>и грузовые заказы<br><em>с комиссией от 1,5%</em></h1>
+            <div class="eyebrow"><span aria-hidden="true"></span> Подключение по России</div>
+            <h1 id="hero-title">Яндекс Такси<br>и грузовые заказы</h1>
             <p class="hero-lead">Авторегистрация онлайн, выплаты 24/7 и два направления работы — легковое такси и грузовые заказы.</p>
 
             <div class="hero-actions">
-              <a class="button button--gold button--large" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener">Начать регистрацию <span>↗</span></a>
-              <a class="button button--ghost button--large" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener">Написать в MAX</a>
+              <a class="button button--gold button--large" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener" data-cta="registration-hero">Начать регистрацию <span aria-hidden="true">↗</span></a>
+              <a class="button button--ghost button--large" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener" data-cta="max-hero">Написать в MAX</a>
             </div>
-
-            <div class="hero-note">
+            <div class="hero-note" aria-label="Дополнительные условия">
               <span>Регистрация занимает 5 минут</span>
               <span>Вывод от 60 ₽</span>
             </div>
@@ -74,113 +94,85 @@
               <span>Условия парка</span>
               <b>Люкс Арт</b>
             </div>
-
             <div class="board-main">
               <span class="board-label">Такси</span>
               <strong>1,5<sup>%</sup></strong>
               <small>комиссия парка от</small>
             </div>
-
             <div class="board-grid">
-              <div class="board-cell">
-                <span>Грузовой</span>
-                <strong>2,0%</strong>
-                <small>комиссия</small>
-              </div>
-              <div class="board-cell">
-                <span>Выплаты</span>
-                <strong>24/7</strong>
-                <small>в любое время</small>
-              </div>
+              <div class="board-cell"><span>Грузовой</span><strong>2,0%</strong><small>комиссия</small></div>
+              <div class="board-cell"><span>Выплаты</span><strong>24/7</strong><small>в любое время</small></div>
             </div>
-
             <div class="board-footer">
               <div><strong>1 200+</strong><span>водителей</span></div>
               <div><strong>85</strong><span>городов РФ</span></div>
-              <div class="board-status"><i></i><span>Подключение онлайн</span></div>
+              <div class="board-status"><i aria-hidden="true"></i><span>Подключение онлайн</span></div>
             </div>
           </aside>
 
-          <div class="hero-strip reveal" aria-label="Ключевые условия">
-            <div><span>01</span><strong>Такси</strong><small>Эконом · Комфорт · Комфорт+ · Бизнес</small></div>
-            <div><span>02</span><strong>Грузовой</strong><small>Грузовые автомобили и курьеры</small></div>
-            <div><span>03</span><strong>Регистрация</strong><small>Через форму Яндекс, без звонка</small></div>
-            <div><span>04</span><strong>Связь</strong><small>MAX · телефон · почта</small></div>
-          </div>
+          <ul class="hero-strip reveal" aria-label="Ключевые условия">
+            <li><span>01</span><strong>Такси</strong><small>Эконом · Комфорт · Комфорт+ · Бизнес</small></li>
+            <li><span>02</span><strong>Грузовой</strong><small>Грузовые автомобили и курьеры</small></li>
+            <li><span>03</span><strong>Регистрация</strong><small>Через форму Яндекс, без звонка</small></li>
+            <li><span>04</span><strong>Связь</strong><small>MAX · телефон · почта</small></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section section--directions" id="directions">
+    <section class="section section--directions" id="directions" aria-labelledby="directions-title">
       <div class="container">
         <div class="section-head reveal">
-          <div>
-            <div class="eyebrow eyebrow--section">Направления</div>
-            <h2>Выберите формат работы</h2>
-          </div>
+          <div><div class="eyebrow eyebrow--section">Направления</div><h2 id="directions-title">Выберите формат работы</h2></div>
           <p>Условия вынесены прямо в карточки — без отдельного расчёта и ожидания звонка.</p>
         </div>
 
         <div class="direction-grid">
           <article class="direction-card direction-card--taxi reveal">
             <div class="direction-card__top">
-              <div class="direction-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M5 16h14l-1.4-5.1A2 2 0 0 0 15.7 9H8.3a2 2 0 0 0-1.9 1.9L5 16Z"/><path d="M4 16v2.5M20 16v2.5M8 19h8M7.5 13h.01M16.5 13h.01"/></svg>
-              </div>
+              <div class="direction-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 16h14l-1.4-5.1A2 2 0 0 0 15.7 9H8.3a2 2 0 0 0-1.9 1.9L5 16Z"/><path d="M4 16v2.5M20 16v2.5M8 19h8M7.5 13h.01M16.5 13h.01"/></svg></div>
               <span class="direction-index">01 / Такси</span>
             </div>
             <div class="direction-card__body">
               <h3>Легковое такси</h3>
               <p>Подключение к заказам Яндекс Про для легковых автомобилей.</p>
-              <ul class="plain-list">
-                <li>Эконом</li>
-                <li>Комфорт</li>
-                <li>Комфорт+</li>
-                <li>Бизнес</li>
-              </ul>
+              <ul class="plain-list"><li>Эконом</li><li>Комфорт</li><li>Комфорт+</li><li>Бизнес</li></ul>
             </div>
             <div class="direction-card__bottom">
               <div class="commission"><span>Комиссия парка</span><strong>от 1,5%</strong></div>
               <div class="direction-meta"><span>Приоритет в заказах</span><span>Выплаты 24/7</span></div>
-              <a class="card-link" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener">Подключить такси <span>↗</span></a>
+              <a class="card-link" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener" data-cta="registration-taxi">Подключить такси <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
           <article class="direction-card direction-card--cargo reveal">
             <div class="direction-card__top">
-              <div class="direction-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg>
-              </div>
+              <div class="direction-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></div>
               <span class="direction-index">02 / Грузовой</span>
             </div>
             <div class="direction-card__body">
               <h3>Грузовые заказы</h3>
               <p>Подключение грузовых автомобилей и курьеров к доступным заказам.</p>
-              <ul class="plain-list">
-                <li>Грузовые автомобили</li>
-                <li>Курьерские заказы</li>
-                <li>Работа через Яндекс Про</li>
-              </ul>
+              <ul class="plain-list"><li>Грузовые автомобили</li><li>Курьерские заказы</li><li>Работа через Яндекс Про</li></ul>
             </div>
             <div class="direction-card__bottom">
               <div class="commission"><span>Комиссия парка</span><strong>2,0%</strong></div>
               <div class="direction-meta"><span>Выплаты 24/7</span><span>Вывод от 60 ₽</span></div>
-              <a class="card-link" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener">Подключить грузовой <span>↗</span></a>
+              <a class="card-link" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener" data-cta="registration-cargo">Подключить грузовой <span aria-hidden="true">↗</span></a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--conditions" id="conditions">
+    <section class="section section--conditions" id="conditions" aria-labelledby="conditions-title">
       <div class="container conditions-grid">
         <div class="conditions-copy reveal">
           <div class="eyebrow eyebrow--section">Условия</div>
-          <h2>Главное — в цифрах</h2>
+          <h2 id="conditions-title">Главное — в цифрах</h2>
           <p>То, что обычно проверяют перед подключением к парку.</p>
-          <a class="text-action" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener">Есть вопрос — написать в MAX <span>↗</span></a>
+          <a class="text-action" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener" data-cta="max-conditions">Есть вопрос — написать в MAX <span aria-hidden="true">↗</span></a>
         </div>
-
         <div class="condition-list">
           <article class="condition-row reveal"><span>01</span><div><strong>Выплаты 24/7</strong><p>Вывод средств доступен круглосуточно.</p></div><b>24/7</b></article>
           <article class="condition-row reveal"><span>02</span><div><strong>Минимальная сумма вывода</strong><p>Средства можно выводить от установленного минимума.</p></div><b>60 ₽</b></article>
@@ -190,30 +182,22 @@
       </div>
     </section>
 
-    <section class="section section--requirements" id="requirements">
+    <section class="section section--requirements" id="requirements" aria-labelledby="requirements-title">
       <div class="container">
         <div class="section-head reveal">
-          <div>
-            <div class="eyebrow eyebrow--section">Перед регистрацией</div>
-            <h2>Что понадобится</h2>
-          </div>
+          <div><div class="eyebrow eyebrow--section">Перед регистрацией</div><h2 id="requirements-title">Что понадобится</h2></div>
           <p>Подготовьте документы заранее — так регистрацию можно пройти за один раз.</p>
         </div>
-
         <div class="requirements-layout">
           <article class="requirement-main reveal">
             <span class="panel-number">01</span>
-            <div>
-              <h3>Для водителя</h3>
-              <ul class="check-list">
-                <li><strong>Возраст — от 21 года</strong><span>Для подключения к работе в парке.</span></li>
-                <li><strong>Стаж — от 3 лет</strong><span>Требование для направления «Такси».</span></li>
-                <li><strong>Водительское удостоверение</strong><span>РФ, Беларусь, Кыргызстан, Казахстан, Абхазия или Южная Осетия.</span></li>
-                <li><strong>Смартфон</strong><span>Android или iOS для работы в Яндекс Про.</span></li>
-              </ul>
-            </div>
+            <div><h3>Для водителя</h3><ul class="check-list">
+              <li><strong>Возраст — от 21 года</strong><span>Для подключения к работе в парке.</span></li>
+              <li><strong>Стаж — от 3 лет</strong><span>Требование для направления «Такси».</span></li>
+              <li><strong>Водительское удостоверение</strong><span>РФ, Беларусь, Кыргызстан, Казахстан, Абхазия или Южная Осетия.</span></li>
+              <li><strong>Смартфон</strong><span>Android или iOS для работы в Яндекс Про.</span></li>
+            </ul></div>
           </article>
-
           <aside class="documents-panel reveal">
             <div class="documents-head"><span class="panel-number">02</span><h3>Документы</h3></div>
             <div class="document-item"><span>01</span><strong>Водительское удостоверение</strong></div>
@@ -224,71 +208,47 @@
       </div>
     </section>
 
-    <section class="section section--steps" id="steps">
+    <section class="section section--steps" id="steps" aria-labelledby="steps-title">
       <div class="container">
         <div class="section-head section-head--light reveal">
-          <div>
-            <div class="eyebrow eyebrow--section">Подключение</div>
-            <h2>4 шага до первого выхода</h2>
-          </div>
-          <a class="button button--gold" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener">Открыть регистрацию <span>↗</span></a>
+          <div><div class="eyebrow eyebrow--section">Подключение</div><h2 id="steps-title">4 шага до первого выхода</h2></div>
+          <a class="button button--gold" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener" data-cta="registration-steps">Открыть регистрацию <span aria-hidden="true">↗</span></a>
         </div>
-
         <ol class="steps-grid">
-          <li class="step-card reveal"><span class="step-no">01</span><div class="step-line"></div><h3>Заполнить форму</h3><p>Перейти в авторегистрацию Яндекс и указать данные.</p></li>
-          <li class="step-card reveal"><span class="step-no">02</span><div class="step-line"></div><h3>Загрузить документы</h3><p>Водительское удостоверение и СТС автомобиля.</p></li>
-          <li class="step-card reveal"><span class="step-no">03</span><div class="step-line"></div><h3>Войти в Яндекс Про</h3><p>Установить приложение и войти в созданный профиль.</p></li>
-          <li class="step-card reveal"><span class="step-no">04</span><div class="step-line"></div><h3>Выйти на линию</h3><p>После подключения профиль готов к получению заказов.</p></li>
+          <li class="step-card reveal"><span class="step-no">01</span><div class="step-line" aria-hidden="true"></div><h3>Заполнить форму</h3><p>Перейти в авторегистрацию Яндекс и указать данные.</p></li>
+          <li class="step-card reveal"><span class="step-no">02</span><div class="step-line" aria-hidden="true"></div><h3>Загрузить документы</h3><p>Водительское удостоверение и СТС автомобиля.</p></li>
+          <li class="step-card reveal"><span class="step-no">03</span><div class="step-line" aria-hidden="true"></div><h3>Войти в Яндекс Про</h3><p>Установить приложение и войти в созданный профиль.</p></li>
+          <li class="step-card reveal"><span class="step-no">04</span><div class="step-line" aria-hidden="true"></div><h3>Выйти на линию</h3><p>После подключения профиль готов к получению заказов.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="section section--faq" id="faq">
+    <section class="section section--faq" id="faq" aria-labelledby="faq-title-heading">
       <div class="container faq-layout">
         <div class="faq-title reveal">
           <div class="eyebrow eyebrow--section">Коротко</div>
-          <h2>Частые вопросы</h2>
+          <h2 id="faq-title-heading">Частые вопросы</h2>
           <p>Если ответа нет здесь, второй по приоритету канал после авторегистрации — MAX.</p>
         </div>
         <div class="faq-list">
-          <details class="faq-item reveal" open>
-            <summary>Какая комиссия у парка?<span>+</span></summary>
-            <p>Для такси — от 1,5%. Для грузового направления — 2,0%.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Когда можно вывести деньги?<span>+</span></summary>
-            <p>Выплаты доступны 24/7. Минимальная сумма вывода — от 60 ₽.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Какие тарифы доступны для такси?<span>+</span></summary>
-            <p>Эконом, Комфорт, Комфорт+ и Бизнес.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Сколько занимает регистрация?<span>+</span></summary>
-            <p>Онлайн-регистрация занимает около 5 минут при подготовленных данных и документах.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Как связаться с парком?<span>+</span></summary>
-            <p>Сначала можно пройти авторегистрацию. Для вопроса специалисту — MAX, затем телефон и почта.</p>
-          </details>
+          <details class="faq-item reveal" open><summary>Какая комиссия у парка?<span aria-hidden="true">+</span></summary><p>Для такси — от 1,5%. Для грузового направления — 2,0%.</p></details>
+          <details class="faq-item reveal"><summary>Когда можно вывести деньги?<span aria-hidden="true">+</span></summary><p>Выплаты доступны 24/7. Минимальная сумма вывода — от 60 ₽.</p></details>
+          <details class="faq-item reveal"><summary>Какие тарифы доступны для такси?<span aria-hidden="true">+</span></summary><p>Эконом, Комфорт, Комфорт+ и Бизнес.</p></details>
+          <details class="faq-item reveal"><summary>Сколько занимает регистрация?<span aria-hidden="true">+</span></summary><p>Онлайн-регистрация занимает около 5 минут при подготовленных данных и документах.</p></details>
+          <details class="faq-item reveal"><summary>Как связаться с парком?<span aria-hidden="true">+</span></summary><p>Сначала можно пройти авторегистрацию. Для вопроса специалисту — MAX, затем телефон и почта.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contacts">
+    <section class="contact-section" id="contacts" aria-labelledby="contacts-title">
       <div class="container">
         <div class="contact-panel">
-          <div class="contact-copy reveal">
-            <div class="eyebrow">Начать работу</div>
-            <h2>Подключение<br>без лишних шагов</h2>
-            <p>Главный путь — авторегистрация. Если по ходу нужен ответ, откройте MAX.</p>
-          </div>
-
+          <div class="contact-copy reveal"><div class="eyebrow">Начать работу</div><h2 id="contacts-title">Подключение<br>без лишних шагов</h2><p>Главный путь — авторегистрация. Если по ходу нужен ответ, откройте MAX.</p></div>
           <div class="contact-actions reveal">
-            <a class="contact-primary" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener"><span>01 · Авторегистрация</span><strong>Начать подключение</strong><b>↗</b></a>
-            <a class="contact-secondary" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener"><span>02 · MAX</span><strong>Написать специалисту</strong><b>↗</b></a>
-            <a class="contact-line" href="tel:+79218494032"><span>03 · Телефон</span><strong>8 921 849-40-32</strong><b>↗</b></a>
-            <a class="contact-line" href="mailto:m0tors.grand@yandex.ru"><span>04 · Почта</span><strong>m0tors.grand@yandex.ru</strong><b>↗</b></a>
+            <a class="contact-primary" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener" data-cta="registration-contact"><span>01 · Авторегистрация</span><strong>Начать подключение</strong><b aria-hidden="true">↗</b></a>
+            <a class="contact-secondary" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener" data-cta="max-contact"><span>02 · MAX</span><strong>Написать специалисту</strong><b aria-hidden="true">↗</b></a>
+            <a class="contact-line" href="tel:+79218494032" data-cta="phone-contact"><span>03 · Телефон</span><strong>8 921 849-40-32</strong><b aria-hidden="true">↗</b></a>
+            <a class="contact-line" href="mailto:m0tors.grand@yandex.ru" data-cta="email-contact"><span>04 · Почта</span><strong>m0tors.grand@yandex.ru</strong><b aria-hidden="true">↗</b></a>
           </div>
         </div>
       </div>
@@ -298,24 +258,24 @@
   <footer class="footer">
     <div class="container footer-row">
       <a class="brand brand--footer" href="#top">
-        <img src="assets/lux-art-logo.png" width="50" height="50" alt="">
+        <img src="https://krutoykrout.github.io/LuxArt/assets/lux-art-logo.png" width="50" height="50" alt="" loading="lazy" decoding="async">
         <span class="brand-copy"><strong>Люкс Арт</strong><small>Парк-партнёр Яндекс</small></span>
       </a>
-      <div class="footer-links">
-        <a href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener">Авторегистрация</a>
-        <a href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener">MAX</a>
-        <a href="tel:+79218494032">8 921 849-40-32</a>
-        <a href="mailto:m0tors.grand@yandex.ru">Почта</a>
-      </div>
+      <nav class="footer-links" aria-label="Контакты и действия">
+        <a href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener" data-cta="registration-footer">Авторегистрация</a>
+        <a href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener" data-cta="max-footer">MAX</a>
+        <a href="tel:+79218494032" data-cta="phone-footer">8 921 849-40-32</a>
+        <a href="mailto:m0tors.grand@yandex.ru" data-cta="email-footer">Почта</a>
+      </nav>
       <span class="copyright">© 2026 Люкс Арт</span>
     </div>
   </footer>
 
-  <div class="mobile-dock" aria-label="Быстрые действия">
-    <a class="mobile-dock__main" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener">Регистрация</a>
-    <a class="mobile-dock__max" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener">MAX</a>
-  </div>
+  <nav class="mobile-dock" aria-label="Быстрые действия">
+    <a class="mobile-dock__main" href="https://forms.fleet.yandex.ru/forms?ref_id=97058906f9f54353abf87db56b99df67" target="_blank" rel="noopener" data-cta="registration-dock">Регистрация</a>
+    <a class="mobile-dock__max" href="https://max.ru/u/f9LHodD0cOLd6pI33SXqFn7qnQ2wpcogB-jGVsN8KQkAhj5q4OC2SV7oHeI" target="_blank" rel="noopener" data-cta="max-dock">MAX</a>
+  </nav>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
